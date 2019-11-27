@@ -1385,7 +1385,7 @@ Install using conda:
         )
 
     # Validate orca executable
-    if status.state == "unvalidated":
+    if status.state == "unvalidated" and not config.server_url:
         validate_executable()
 
     if not config.server_url:
